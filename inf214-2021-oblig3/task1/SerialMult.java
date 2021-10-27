@@ -1,5 +1,4 @@
-
-package Task1;
+package task1;
 
 public class SerialMult {
     public static void multiply(double[][] A, double[][] B, double[][] C) {

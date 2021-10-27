@@ -1,5 +1,5 @@
 
-package Task1;
+package task1;
 
 import java.util.*;
 
@@ -11,7 +11,8 @@ public class MatrixMult {
             RowMultiplierTask task = new RowMultiplierTask(C, A, B, i);
             Thread thread = new Thread(task);
 
-
+            thread.start();//Thread.run();?
+            threads.add(thread);
 
 
             // TODO: your solution here
@@ -28,6 +29,7 @@ public class MatrixMult {
     private static void waitForThreads(List<Thread> threads) {
         for (Thread thread : threads) {
             try {
+                thread.join();
 
 
 

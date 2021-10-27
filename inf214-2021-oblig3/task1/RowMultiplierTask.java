@@ -1,5 +1,5 @@
 
-package Task1;
+package task1;
 
 public class RowMultiplierTask implements Runnable {
 

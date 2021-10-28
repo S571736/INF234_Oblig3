@@ -11,7 +11,7 @@ public class MatrixMult {
             RowMultiplierTask task = new RowMultiplierTask(C, A, B, i);
             Thread thread = new Thread(task);
 
-            thread.start();//Thread.run();?
+            thread.start();
             threads.add(thread);
 
 
